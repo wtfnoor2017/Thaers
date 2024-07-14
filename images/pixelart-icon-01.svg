@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <rect class="cls-1" x="1.04" y="1.04" width="125.92" height="125.92"/>
+  </g>
+  <g id="Layer_15" data-name="Layer 15">
+    <path class="cls-1" d="m64.38,29.01V1.42"/>
+    <path class="cls-1" d="m64.38,64h34.99c0,19.32-15.67,34.99-34.99,34.99-19.32,0-34.99-15.67-34.99-34.99"/>
+    <polyline class="cls-1" points="64.38 64 78.92 41.7 119.58 1.04"/>
+    <polyline class="cls-1" points="126.96 9.18 86.68 49.46 70.36 60.1"/>
+    <path class="cls-1" d="m70.36,60.1c1.02-1.01-1.06-3.1-2.08-2.09"/>
+    <path class="cls-1" d="m85.92,42.46c-1.94-1.94-4.92-2.84-7-.76"/>
+    <rect class="cls-1" x="58.55" y="29.01" width="5.83" height="5.83"/>
+    <rect class="cls-1" x="52.71" y="29.01" width="5.83" height="5.83"/>
+    <rect class="cls-1" x="52.71" y="34.84" width="5.83" height="5.83"/>
+    <rect class="cls-1" x="46.88" y="34.84" width="5.83" height="5.83"/>
+    <rect class="cls-1" x="41.05" y="34.84" width="5.83" height="5.83"/>
+    <rect class="cls-1" x="35.22" y="40.67" width="5.83" height="5.83"/>
+    <rect class="cls-1" x="52.71" y="46.51" width="5.83" height="5.83"/>
+    <rect class="cls-1" x="41.05" y="46.51" width="5.83" height="5.83"/>
+    <rect class="cls-1" x="35.22" y="46.51" width="5.83" height="5.83"/>
+    <rect class="cls-1" x="29.39" y="52.34" width="5.83" height="5.83"/>
+    <rect class="cls-1" x="41.05" y="58.17" width="5.83" height="5.83"/>
+    <rect class="cls-1" x="29.39" y="58.17" width="5.83" height="5.83"/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <rect class="cls-1" x="1.04" y="1.04" width="125.92" height="125.92"/>
+  </g>
+  <g id="Layer_3" data-name="Layer 3">
+    <circle class="cls-1" cx="64" cy="64" r="62.96"/>
+    <polygon class="cls-1" points="118.48 32.59 9.52 32.59 64 126.96 118.48 32.59"/>
+  </g>
+</svg>
