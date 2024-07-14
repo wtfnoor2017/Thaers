@@ -1,0 +1,190 @@
+
+* {
+  margin:0;
+  padding:0;
+  border:0;
+  }
+
+body {
+  background-color:#fff8ed;
+  }
+  
+.bg {
+  width:100%;
+  height:100%;
+  background: linear-gradient(180deg, rgba(255,248,237,1) 30%, rgba(244,231,221,1) 100%);
+  position:absolute;
+  }
+  
+.content {
+  background-color:#fff8ed;
+  position:absolute;
+  width:80vw;
+  height:40vw;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  box-shadow: 0px 30px 30px rgba(54,15,15,0.1);
+  overflow:hidden;
+  }
+
+.videoContainer {
+  width:40vw;
+  height:40vw;
+  float:left;
+  overflow:hidden;
+  }
+  
+.videoContainer video {
+  width:40vw;
+  margin-left:auto;
+  margin-right:auto;
+  transform:scale(1);
+  position:relative;
+  
+  }
+
+.info {
+  width:40vw;
+  height:40vw;
+  text-align:center;
+  float:right;
+  position: relative;
+  }
+  
+.textbox {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:80%;
+  height:auto;
+  max-width:400px;
+  }
+
+.info h1, .info p {
+  font-weight:100;
+  font-style:italic;
+  letter-spacing:4px;
+  display:block;
+  margin-bottom:20px;
+  }
+  
+.info p {
+  margin-top:20px;
+  }
+  
+.info a {
+  text-decoration:none;
+  color:black;
+  font-size:18px;
+  display:inline-block;
+  transition:all 0.2s ease-in-out;
+  padding:10px 15px;
+  }
+  
+.info a:hover {
+  color:gray;
+  }
+
+.info hr {
+  height:1px;
+  color:black;
+  background-color:black;
+  width:50%;
+  margin-left:auto;
+  margin-right:auto;
+  }
+  
+.sigil {
+  position:fixed;
+  height:32px;
+  width:32px;
+  left:10px;
+  top:10px;
+  background-image:url("../favicon.svg");
+  background-repeat:no-repeat;
+  background-size: 24px;
+  background-position:center center;
+  transition: background-size 0.5s ease-in-out, transform 0.5s ease-in-out;
+  z-index:9999;
+  }
+.sigil:hover {
+  background-size: 32px;
+  transform:rotate(180deg);
+  }
+  
+@media only screen and (max-width: 950px) {
+.content {
+  width:80vw;
+  height:40vw;
+  }
+.videoContainer {
+  width:40vw;
+  height:40vw;
+  }
+
+.videoContainer video {
+  width:40vw;
+  height:40vw;
+  }
+  
+.info {
+  width:40vw;
+  height:40vw;
+  }
+  
+.info p {
+  font-size:12px;
+  }
+  
+.info a {
+  font-size:14px;
+  }
+  
+.info h1 {
+  font-size:20px;
+  }
+
+
+}
+
+@media only screen and (max-width: 550px) {
+.content {
+  width:100vw;
+  height:100vh;
+  overflow:hidden;
+  }
+.videoContainer {
+  width:100vw;
+  height:50vh;
+  float:none;
+  }
+  
+.videoContainer video {
+  width:100vw;
+  height:50vh;
+  transform:scale(1.15);
+  }
+  
+.info {
+  width:100vw;
+  height:50vh;
+  float:none;
+  }
+  
+.info p {
+  font-size:16px;
+  }
+  
+.info a {
+  font-size:20px;
+  }
+  
+.info h1 {
+  font-size:24px;
+  }
+
+}
+
+  
