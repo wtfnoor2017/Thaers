@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from thaer.no/sound/audiolibrary by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jul 2024 04:20:27 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>æther audio archive</title>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="player.css"/>
+    <script defer src="player.js"></script>
+  </head>
+  <body>
+  <a class="sigil" href="https://ae-ther.neocities.org/"></a>
+  <div class="content">
+  <h1>æther audio archive playlist</h1>
+    <div id="aWrap">
+      <!-- (A) PLAY/PAUSE BUTTON -->
+      <button id="aPlay" disabled><span id="aPlayIco" class="material-icons">
+        play_arrow
+      </span></button>
+
+      <!-- (B) TIME -->
+      <div id="aCron">
+        <span id="aNow"></span> / <span id="aTime"></span>
+      </div>
+
+      <!-- (C) SEEK BAR -->
+      <input id="aSeek" type="range" min="0" value="0" step="1" disabled/>
+
+      <!-- (D) VOLUME SLIDE -->
+      <span id="aVolIco" class="material-icons">volume_up</span>
+      <input id="aVolume" type="range" min="0" max="1" value="1" step="0.1" disabled/>
+
+      <!-- (E) PLAYLIST -->
+      <div id="aList"></div>
+    </div>
+    </div>
+  </body>
+
+<!-- Mirrored from thaer.no/sound/audiolibrary by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jul 2024 04:20:29 GMT -->
+</html>
