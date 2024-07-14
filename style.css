@@ -1,113 +1,102 @@
 body {
   background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
-
-* {
-  margin:0px;
-  padding:0px;
-  }
 
 #logoAnim {
-  position:absolute;
-  transform:translate(-50%,-50%) scale(1);
-  left:50%;
-  top:50%;
-  height:20vw;
-  width:20vw;
-  min-width:200px;
-  min-height:200px;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(1);
+  left: 50%;
+  top: 50%;
+  height: 20vw;
+  width: 20vw;
+  min-width: 200px;
+  min-height: 200px;
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
   transition: transform 1s ease-in-out, filter 1s ease-in-out;
-  }
-  
+}
+
 #logoAnim:hover {
-  transform:translate(-50%,-50%) scale(1.1);
+  transform: translate(-50%, -50%) scale(1.1);
   filter: drop-shadow(5px 40px 15px rgba(0, 0, 0, 0.9));
-  }
-  
+}
+
 @keyframes floatY {
   0% {
-    transform:translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
   50% {
-    transform:translate(-50%,-45%);
+    transform: translate(-50%, -45%);
   }
   100% {
-    transform:translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
 }
-  
 
-  
 #content {
-  width:100vw;
-  height:100vh;
-  image-rendering:pixelated;
-  background-image:url(images/texture-bg-01.png);
+  width: 100vw;
+  height: 100vh;
+  image-rendering: pixelated;
+  background-image: url(images/texture-bg-01.png);
   animation: bgMoveY 120s infinite linear, bgMoveX 60s infinite ease-in-out;
-  }
-  
+}
+
 .bg02 {
-  position:absolute;
-  width:100vw;
-  height:100vh;
-  image-rendering:pixelated;
-  background-image:url(images/texture-bg-02.png);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  image-rendering: pixelated;
+  background-image: url(images/texture-bg-02.png);
   animation: bgMoveY 60s infinite linear, bgMoveX 30s infinite ease-in-out;
-  }
-  
+}
+
 .bg03 {
-  position:absolute;
-  width:100vw;
-  height:100vh;
-  image-rendering:pixelated;
-  background-image:url(images/texture-bg-03.png);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  image-rendering: pixelated;
+  background-image: url(images/texture-bg-03.png);
   animation: bgMoveY 30s infinite linear, bgMoveX 15s infinite ease-in-out;
-  }
-  
+}
+
 .vignette {
-  background: rgb(0,0,0);
-  background: radial-gradient(circle, rgba(0,0,0,0) 25%, rgba(0,0,0,1) 100%);
-  position:absolute;
-  width:100vw;
-  height:100vh;
-  }
-  
+  background: rgb(0, 0, 0);
+  background: radial-gradient(circle, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
 #sentence {
-  position:absolute;
-  z-index:99;
-  color:gray;
-  font-style:italic;
-  letter-spacing:2px;
-  font-size:8px;
-  line-height:8px;
-  width:100px;
-  height:auto;
-  bottom:10px;
-  right:10px;
-  text-align:right;
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
-  }
-  
+  position: absolute;
+  z-index: 99;
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @keyframes bgMoveY {
   0% {
-    background-position-y:1024px;
+    background-position-y: 1024px;
   }
   100% {
-    background-position-y:-1024px;
+    background-position-y: -1024px;
   }
 }
 
 @keyframes bgMoveX {
   0% {
-    background-position-x:0px;
+    background-position-x: 0px;
   }
   50% {
-    background-position-x:50px;
+    background-position-x: 50px;
   }
   100% {
-    background-position-x:0px;
+    background-position-x: 0px;
   }
 }
