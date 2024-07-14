@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <rect class="cls-1" x="1.04" y="1.04" width="125.92" height="125.92"/>
+  </g>
+  <g id="Layer_16" data-name="Layer 16">
+    <g>
+      <polygon class="cls-1" points="81.31 82.24 98.73 113.63 112.7 99.67 81.31 82.24"/>
+      <line class="cls-1" x1="105.72" y1="106.65" x2="116.67" y2="117.61"/>
+    </g>
+    <polyline class="cls-1" points="88.59 104.5 53.26 104.5 53.26 23.5 104.5 23.5 104.5 89.08"/>
+    <rect class="cls-1" x="48.3" y="23.5" width="4.96" height="81.01" transform="translate(101.56 128) rotate(180)"/>
+    <rect class="cls-1" x="43.34" y="23.5" width="4.96" height="81.01" transform="translate(91.64 128) rotate(180)"/>
+    <rect class="cls-1" x="38.38" y="23.5" width="4.96" height="81.01" transform="translate(81.72 128) rotate(180)"/>
+    <rect class="cls-1" x="33.42" y="23.5" width="4.96" height="81.01" transform="translate(71.79 128) rotate(180)"/>
+    <rect class="cls-1" x="28.46" y="23.5" width="4.96" height="81.01" transform="translate(61.87 128) rotate(180)"/>
+    <rect class="cls-1" x="23.5" y="23.5" width="4.96" height="81.01" transform="translate(51.95 128) rotate(180)"/>
+    <line class="cls-1" x1="67.71" y1="34.66" x2="90.06" y2="34.66"/>
+    <line class="cls-1" x1="60.19" y1="44.22" x2="97.58" y2="44.22"/>
+    <line class="cls-1" x1="60.19" y1="50.44" x2="97.58" y2="50.44"/>
+    <line class="cls-1" x1="60.19" y1="56.65" x2="97.58" y2="56.65"/>
+    <line class="cls-1" x1="60.19" y1="62.86" x2="97.58" y2="62.86"/>
+    <line class="cls-1" x1="66.14" y1="69.08" x2="91.62" y2="69.08"/>
+  </g>
+</svg>

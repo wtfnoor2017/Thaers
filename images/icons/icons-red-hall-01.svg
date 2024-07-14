@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <rect class="cls-1" x="1.04" y="1.04" width="125.92" height="125.92"/>
+  </g>
+  <g id="Layer_7" data-name="Layer 7">
+    <rect class="cls-1" x="8.86" y="9.05" width="23.53" height="31.57"/>
+    <polygon class="cls-1" points="43.68 25.84 43.68 51.37 24.64 51.37 24.64 40.62 32.39 40.62 32.39 25.84 43.68 25.84"/>
+    <polygon class="cls-1" points="88.92 17.37 88.92 65.87 81.05 65.87 81.05 51.37 61.95 51.37 61.95 58.55 52.76 58.55 52.76 17.37 88.92 17.37"/>
+    <rect class="cls-1" x="100.75" y="93.55" width="18.39" height="24.68"/>
+    <polygon class="cls-1" points="114.35 79.28 114.35 93.55 100.75 93.55 100.75 109.16 92.08 109.16 92.08 79.28 114.35 79.28"/>
+    <polygon class="cls-1" points="81.05 51.37 81.05 77.01 72.69 77.01 72.69 58.55 61.95 58.55 61.95 51.37 81.05 51.37"/>
+    <rect class="cls-1" x="95.61" y="9.05" width="23.53" height="31.57"/>
+    <polygon class="cls-1" points="52.76 101.07 52.76 112.21 29.23 112.21 29.23 80.64 41 80.64 41 101.07 52.76 101.07"/>
+    <polygon class="cls-1" points="33.26 71.94 33.26 80.64 29.23 80.64 29.23 95.06 16.02 95.06 16.02 71.94 33.26 71.94"/>
+    <polygon class="cls-1" points="33.22 112.21 33.22 118.18 8.86 118.18 8.86 85.5 16.02 85.5 16.02 95.06 29.23 95.06 29.23 112.21 33.22 112.21"/>
+    <rect class="cls-1" x="41" y="58.55" width="31.69" height="42.52"/>
+  </g>
+</svg>

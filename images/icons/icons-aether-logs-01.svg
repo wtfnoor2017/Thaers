@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <rect class="cls-1" x="1.04" y="1.04" width="125.92" height="125.92"/>
+  </g>
+  <g id="Layer_6" data-name="Layer 6">
+    <g>
+      <line class="cls-1" x1="40.56" y1="109.83" x2="88.2" y2="109.83"/>
+      <line class="cls-1" x1="53.3" y1="116.15" x2="74.7" y2="116.15"/>
+      <path class="cls-1" d="m99.37,64c0-19.53-15.83-35.37-35.37-35.37s-35.37,15.83-35.37,35.37,15.83,35.37,35.37,35.37"/>
+      <g>
+        <polygon class="cls-1" points="64 64 81.43 95.39 95.39 81.43 64 64"/>
+        <line class="cls-1" x1="88.41" y1="88.41" x2="99.37" y2="99.37"/>
+      </g>
+      <polyline class="cls-1" points="18.27 11.85 11.85 11.85 11.85 18.27"/>
+      <polyline class="cls-1" points="109.73 11.85 116.15 11.85 116.15 18.27"/>
+      <polyline class="cls-1" points="109.73 116.15 116.15 116.15 116.15 109.73"/>
+      <polyline class="cls-1" points="18.27 116.15 11.85 116.15 11.85 109.73"/>
+    </g>
+  </g>
+</svg>
