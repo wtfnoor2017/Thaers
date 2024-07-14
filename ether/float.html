@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from thaer.no/ether/float by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jul 2024 04:27:19 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>æther – float</title>
+    <link rel="icon" type="image/x-icon" href="favicon-01.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+  let letter = 0;
+  const text = "Wisked from a string, chained to a dance-puppets in the boundary";
+  function typeText() {
+    if (letter < text.length) {
+      document.getElementById("type-js").innerHTML += text.charAt(letter);
+      letter++;
+      let speed = Math.floor(Math.random() * 150) + 50;
+      setTimeout(typeText, speed);
+    }
+  }
+  typeText();
+});
+    </script>
+  </head>
+  
+  <body>
+  <div class="content"> 
+  <div class="imageborder">
+    <img class="picture" src="float-01.gif">
+  </div>
+    <div class="bordertext">
+    <p id="type-js" class="one">
+    </div>
+    <a class="button" href="preist.html">next</a>
+    </div>
+  </body>
+
+<!-- Mirrored from thaer.no/ether/float by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jul 2024 04:27:19 GMT -->
+</html>

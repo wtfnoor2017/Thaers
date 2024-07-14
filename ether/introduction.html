@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from thaer.no/ether/introduction by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jul 2024 04:19:08 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>æther – introduction</title>
+    <link rel="icon" type="image/x-icon" href="favicon-01.png">
+    
+    
+         <style>
+         body {
+           font-family: Helvetica, sans-serif;
+           font-style: italic;
+           text-align:center;
+           margin:0px;
+           padding:0px;
+           background-color:black;
+           image-rendering: pixelated;
+           font-smooth: never;
+           -webkit-font-smoothing : none;
+           color:white;
+           padding-top:20px;
+           }
+           
+          p {
+            letter-spacing:2px;
+            font-size:10px;
+            line-height:20px;
+            }
+            
+            a {
+  color:white;
+  transition: letter-spacing 0.5s ease;
+  }
+  a:hover {
+  color:gray;
+  letter-spacing:5px;
+  
+
+  }
+           
+           .content {
+             position:absolute;
+             left:50%;
+             top:50%;
+             transform:translate(-50%,-50%);
+             display:block;
+             margin-top:25px;
+             margin-bottom:25px;
+             width:430px;
+            
+             }
+          .picture {
+            display:block;
+            
+            }
+            
+            .imageborder{
+              width:256px;
+              height:256px;
+              background-image:url(border-img-01.gif);
+              }
+            
+            
+          .button {
+            height:20px;
+            width:70px;
+            border: 1px solid transparent;
+            border-image: url(border-pattern-03.gif) 1 1;
+            margin:auto;
+            margin-top:20px;
+            color:white;
+            font-size:8pt;
+            text-decoration:none;
+            display:block;
+            line-height:20px;
+            transition: letter-spacing 0.5s ease, width 0.5s ease;
+            letter-spacing:2px;
+            }
+            
+        .button:hover {
+          background-image:url(bg-btn-01.gif);
+          color:black;
+          letter-spacing:5px;
+          width:254px;
+          }
+
+      .bordertext {
+        background-image: url("border-text-03.gif");
+        background-repeat: no-repeat;
+        margin-top:20px;
+        height:128px;
+        width:256px;
+        }
+        
+        span {
+          letter-spacing:2px;
+          font-size:10px;
+          line-height:20px;
+          }
+          
+          
+        .iconMain {
+          background-image: url("favicon-01.png");
+          background-repeat: no-repeat;
+          height:16px;
+          width:16px;
+          margin:auto;
+          margin-bottom: 20px;
+          }
+          
+        .headline {
+          border: 1px solid transparent;
+          border-image: url(border-pattern-03.gif) 1 stretch;
+          display:block;
+          padding:20px;
+          }
+          
+          hr {
+            border-top: 1px white;
+            border-style: solid;
+            }
+         </style>
+  </head>
+  
+  <body>
+  <p>collaboration project:<br><a href="https://fauux.neocities.org/" target="_blank">fauux</a> + <a href="https://koilsdatter.neocities.org/" target="_blank">uni</a></p>
+    <div class="content">
+      <p class="headline">Introduction to the Æther<p>
+      <p>The Æther, a realm beyond our own,<br>
+Where darkness and lightness forever are shown.<br>
+It flows within us, a subtle, ethereal force,<br>
+That can be felt if you close your eyes and let it course.<br>
+But we are mere visitors, simple observers in this place,<br>
+Where judgment does not dwell, but mystery and grace.<br>
+It serves as a compass, guiding us through life's twists and turns,<br>
+But we must be careful, for the Æther forever burns.<br>
+A place of wonder, where we can find our way,<br>
+But do not linger too long, or you may never stray.<br>
+But beware, for the Æther is not meant for us,<br>
+It holds secrets and mysteries, a dangerous plus.<br>
+Enter with caution, and do not be fooled,<br>
+By the beauty and mystery, the Æther is not for the crude.</p>
+            <hr>
+<label class="container">
+  <input type="checkbox" id="terms"></label> <span>to start you must agree to the <a href="terms_and_conditions.txt" target="_blank">terms & conditions</a></span>
+
+<a class="button" href="#" id="button">start</a>
+<p><a href="#" id="overview-link">overview list</a></p>
+<script>
+  var button = document.getElementById("button");
+  var overviewLink = document.getElementById("overview-link");
+  var terms = document.getElementById("terms");
+
+  terms.addEventListener("change", function() {
+    if (terms.checked) {
+      button.href = "opening.html";
+      overviewLink.href = "log.html";
+    } else {
+      button.href = "#";
+      overviewLink.href = "#";
+    }
+  });
+
+  button.addEventListener("click", function(event) {
+    if (!terms.checked) {
+      event.preventDefault();
+      alert("You must agree to the terms and conditions before proceeding.");
+    }
+  });
+</script>
+
+
+    </div>
+  </body>
+
+<!-- Mirrored from thaer.no/ether/introduction by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jul 2024 04:19:16 GMT -->
+</html>

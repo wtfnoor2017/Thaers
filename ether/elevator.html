@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from thaer.no/ether/elevator by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jul 2024 04:27:15 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>æther – elevator</title>
+    <link rel="icon" type="image/x-icon" href="favicon-01.png">
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+  let letter = 0;
+  const text = "our spiraling string of light, a strand of time- the immortal track";
+  function typeText() {
+    if (letter < text.length) {
+      document.getElementById("type-js").innerHTML += text.charAt(letter);
+      letter++;
+      let speed = Math.floor(Math.random() * 150) + 50;
+      setTimeout(typeText, speed);
+    }
+  }
+  typeText();
+});
+    </script>
+    
+    
+         <style>
+         body {
+           font-family: Helvetica, sans-serif;
+           font-style: italic;
+           text-align:center;
+           margin:0px;
+           padding:0px;
+           background-color:black;
+           image-rendering: pixelated;
+           font-smooth: never;
+           -webkit-font-smoothing : none;
+           }
+           .content {
+             position:absolute;
+             left:50%;
+             top:50%;
+             transform:translate(-50%,-50%);
+             display:block;
+             margin-top:25px;
+             margin-bottom:25px;
+             }
+          .picture {
+            display:block;
+            
+            }
+            
+            .imageborder{
+              width:256px;
+              height:256px;
+              background-image:url(border-img-01.gif);
+              }
+            
+            
+          .button {
+            height:20px;
+            width:70px;
+            border: 1px solid transparent;
+            border-image: url(border-pattern-03.gif) 1 1;
+            margin:auto;
+            margin-top:20px;
+            color:white;
+            font-size:8pt;
+            text-decoration:none;
+            display:block;
+            line-height:20px;
+            transition: letter-spacing 0.5s ease, width 0.5s ease;
+            letter-spacing:2px;
+            }
+            
+        .button:hover {
+          background-image:url(bg-btn-01.gif);
+          color:black;
+          letter-spacing:5px;
+          width:254px;
+          }
+
+      .bordertext {
+        background-image: url("border-text-03.gif");
+        background-repeat: no-repeat;
+        margin-top:20px;
+        height:128px;
+        width:256px;
+        }
+        
+        
+        #type-js {
+          text-align: center;
+          color:white;
+          width:200px;
+          margin:auto;
+          padding-top:35px;
+          letter-spacing:3px;
+          line-height:20px;
+          font-size:12px;
+}
+         </style>
+  </head>
+  
+  <body>
+  <div class="content">
+  <div class="imageborder">
+    <img class="picture" src="elevator-01.gif">
+  </div>
+    <div class="bordertext">
+    <p id="type-js">
+    </p>
+    </div>
+    <a class="button" href="forest.html">next</a>
+    </div>
+  </body>
+
+<!-- Mirrored from thaer.no/ether/elevator by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jul 2024 04:27:15 GMT -->
+</html>
