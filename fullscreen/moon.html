@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from thaer.no/fullscreen/moon by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jul 2024 04:27:40 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clouds.html</title>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<style>
+
+* {
+  margin:0px;
+  padding:0px;
+  color:white;
+  }
+
+body {
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 21%, rgba(255,255,255,1) 100%);
+  overflow:hidden;
+  width:100vw;
+  height:100vh;
+  }
+  
+.forest {
+  background-image:url("clouds/forest-03.png");
+  position:absolute;
+  background-position:bottom;
+  width:100vw;
+  height:100vh;
+  background-repeat:repeat-x;
+  }
+
+.moon {
+  background-image:url("clouds/moonS2.svg");
+  background-repeat:none;
+  background-size: contain;
+  position:absolute;
+  width:500px;
+  height:500px;
+  right:5%;
+  top:1%;
+  opacity:1;
+  }
+  
+
+.vignette {
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 90%);
+  position:absolute;
+  width:100vw;
+  height:100vh;
+  }
+  
+.clouds {
+  position:absolute;
+  width:100vw;
+  height:100vh;
+  background-repeat:repeat-x;
+  background-position-y:65%;
+  background-size:1024px;
+  }
+
+.C1 {
+  background-image:url("clouds/C1.png");
+  animation: moveX 1100s linear infinite;
+  }
+  
+.C2 {
+  background-image:url("clouds/C2.png");
+  animation: moveX 900s linear infinite;
+  }
+  
+.C3 {
+  background-image:url("clouds/C3.png");
+  animation: moveX 700s linear infinite;
+  }
+  
+.C4 {
+  background-image:url("clouds/C4.png");
+  animation: moveX 500s linear infinite;
+  }
+
+.C5 {
+  background-image:url("clouds/C5.png");
+  background-size:1400px;
+  animation: moveXB 300s linear infinite;
+  }
+
+.C6 {
+  background-image:url("clouds/C6.png");
+  background-size:1400px;
+  animation: moveXB 200s linear infinite;
+  }
+  
+@keyframes moveX {
+  from {
+    background-position-x:-1204px;
+  }
+
+  to {
+    background-position-x:1204px;
+  }
+}
+
+@keyframes moveXB {
+  from {
+    background-position-x:-1400px;
+  }
+
+  to {
+    background-position-x:1400px;
+  }
+}
+
+.buttonBox {
+  position:absolute;
+  z-index:98;
+  left:50%;
+  transform:translate(-49%);
+  bottom:20px;
+  }
+  
+.buttonBox a {
+  color:white;
+  text-decoration:none;
+  display:block;
+  float:left;
+  padding-right:10px;
+  padding-left:10px;
+  font-style:italic;
+  letter-spacing:3px;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+  transition:letter-spacing 0.2s ease-in-out;
+  line-height:40px;
+  font-size:10px;
+  }
+  
+.buttonBox a:hover {
+  text-decoration:underline;
+  letter-spacing:5px;
+  }
+  
+  
+.sigil {
+        position:fixed;
+        height:32px;
+        width:32px;
+        left:10px;
+        top:10px;
+        background-image:url("../favicon.svg");
+        background-repeat:no-repeat;
+        background-size: 24px;
+        background-position:center center;
+        transition: background-size 0.5s ease-in-out, transform 0.5s ease-in-out;
+        z-index:99;
+        }
+      .sigil:hover {
+        background-size: 32px;
+        transform:rotate(180deg);
+        }
+
+</style>
+  </head>
+  <body>
+<a class="sigil" href="https://xn--thr-oea8l.no/"></a>
+<div class="clouds C1"></div>
+<div class="clouds C2"></div>
+<div class="clouds C3"></div>
+<div class="clouds C4"></div>
+<div class="clouds C5"></div>
+<div class="clouds C6"></div>
+<div class="vignette"></div>
+<div class="moon"></div>
+<div class="forest"></div>
+<div class="buttonBox">
+  <a href="ladder.html">← previous</a>
+<a href="train.html">next →</a>
+    </div>
+  </body>
+
+<!-- Mirrored from thaer.no/fullscreen/moon by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jul 2024 04:27:46 GMT -->
+</html>

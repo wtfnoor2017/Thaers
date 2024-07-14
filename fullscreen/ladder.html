@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from thaer.no/fullscreen/ladder by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jul 2024 04:27:24 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>æther – ladder</title>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<style>
+* {
+  margin:0px;
+  padding:0px;
+  color:white;
+  }
+
+body {
+  background-color:black;
+  overflow:hidden;
+  width:100vw;
+  height:100vh;
+  color:white;
+  text-align:center;
+  line-height:100vh;
+  font-style:italic;
+  font-weight:100;
+  font-size:10vw;
+  letter-spacing:20px;
+  overflow:hidden;
+  }
+  
+#word {
+  opacity: 0;
+  transition: opacity 1s;
+  z-index:1;
+}
+  
+.vignette {
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 90%);
+  position:absolute;
+  width:100vw;
+  height:100vh;
+  z-index:10;
+  }
+  
+.building {
+  position:absolute;
+  background-size:56vw;
+  background-position: center center;
+  width:100vw;
+  height:100vh;
+  background-image:url("ladder/ladder-01.svg");
+  animation: moveY 3000s linear;  
+  }
+  
+@keyframes moveY {
+  from {
+    background-position-y: -100000px;
+  }
+
+  to {
+    background-position-y: 100000px;
+  }
+}
+
+
+  
+.wires {
+  position:absolute;
+  width:100vw;
+  height:100vh;
+  background-size:100vw;
+  background-position: center center;
+  }
+  
+.w01 {
+  background-image:url("ladder/w01.svg");
+  animation: moveY 2000s linear infinite;
+  z-index:2;
+  }
+  
+.w02 {
+  background-image:url("ladder/w02.svg");
+  animation: moveY 1800s linear infinite;
+  z-index:3;
+  }
+  
+.w03 {
+  background-image:url("ladder/w03.svg");
+  animation: moveY 1600s linear infinite;
+  z-index:4;
+  }
+  
+.w04 {
+  background-image:url("ladder/w04.svg");
+  animation: moveY 1400s linear infinite;
+  z-index:5;
+  }
+  
+.w05 {
+  background-image:url("ladder/w05.svg");
+  animation: moveY 1200s linear infinite;
+  z-index:6;
+  }
+  
+.w06 {
+  background-image:url("ladder/w06.svg");
+  animation: moveY 1000s linear infinite;
+  z-index:7;
+  }
+  
+.w07 {
+  background-image:url("ladder/w07.svg");
+  animation: moveY 800s linear infinite;
+  z-index:8;
+  }
+  
+.buttonBox {
+  position:absolute;
+  z-index:98;
+  left:50%;
+  transform:translate(-49%);
+  bottom:20px;
+  }
+  
+.buttonBox a {
+  color:white;
+  text-decoration:none;
+  display:block;
+  float:left;
+  padding-right:10px;
+  padding-left:10px;
+  font-style:italic;
+  letter-spacing:3px;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+  transition:letter-spacing 0.2s ease-in-out;
+  line-height:40px;
+  font-size:10px;
+  }
+  
+.buttonBox a:hover {
+  text-decoration:underline;
+  letter-spacing:5px;
+  }
+  
+  
+.sigil {
+        position:fixed;
+        height:32px;
+        width:32px;
+        left:10px;
+        top:10px;
+        background-image:url("../favicon.svg");
+        background-repeat:no-repeat;
+        background-size: 24px;
+        background-position:center center;
+        transition: background-size 0.5s ease-in-out, transform 0.5s ease-in-out;
+        z-index:99;
+        }
+      .sigil:hover {
+        background-size: 32px;
+        transform:rotate(180deg);
+        }
+  
+</style>
+
+
+    
+  </head>
+  <body>
+
+  
+    <a class="sigil" href="https://xn--thr-oea8l.no/"></a>
+    <div class="building"></div>
+    <div class="wires w01"></div>
+    <div class="wires w02"></div>
+    <div class="wires w03"></div>
+    <div class="wires w04"></div>
+    <div class="wires w05"></div>
+    <div class="wires w06"></div>
+    <div class="wires w07"></div>
+    <div class="vignette"></div>
+    <div id="word">
+    </div>
+    
+    <script>
+const wordContainer = document.querySelector("#word");
+const words = [
+  "A", "monolith", "of", "darkness,", "towering", "high.",
+  "It", "rises", "o'er", "the", "empty", "landscape", "nigh.",
+  "A", "human-made", "creation,", "grand", "and", "bold.",
+  "Its", "windows", "gleaming", "in", "the", "sun's", "bright", "hold.",
+  "All", "people", "flock", "to", "this", "enigmatic", "place.",
+  "Their", "greed", "a", "driving", "force,", "their", "hearts", "ablaze.",
+  "They", "climb", "the", "stairs,", "an", "endless", "winding", "path.",
+  "Their", "goal", "to", "reach", "the", "top,", "where", "life", "is", "sweetened,", "or", "so", "they're", "told.",
+  "But", "alas,", "the", "building's", "height", "is", "infinite.",
+  "They'll", "never", "reach", "the", "top,", "no", "matter", "how", "adroit.",
+  "And", "so", "they", "settle", "in", "a", "room", "along", "the", "way.",
+  "Their", "own", "self-made", "coffin,", "where", "they", "will", "rest", "and", "stay.",
+  "The", "building", "shrouded", "in", "a", "misty", "veil.",
+  "Its", "true", "height", "unknown,", "an", "enigmatic", "tale.",
+  "No", "name", "to", "speak", "of,", "just", "a", "representation.",
+  "Of", "the", "Boundary,", "the", "place", "where", "human", "minds", "reside,", "in", "all", "their", "imagination."
+  ];
+let index = 0;
+
+function showNextWord() {
+  wordContainer.innerHTML = words[index];
+  wordContainer.style.opacity = 1;
+  index++;
+
+  if (index >= words.length) {
+    index = 0;
+  }
+
+  setTimeout(hideWord, 200);
+}
+
+function hideWord() {
+  wordContainer.style.opacity = 0;
+  setTimeout(showNextWord, 200);
+}
+
+showNextWord();
+    </script>
+    
+    <div class="buttonBox">
+      <a href="../pillar.html">← previous</a>
+      <a href="moon.html">next →</a>
+    </div>
+    <audio hidden autoplay loop>
+<source src="ladder/240724__stib__marching-loop_03.mp3" type="audio/mpeg">
+</audio>
+<audio hidden autoplay loop>
+<source src="ladder/405151__logancircle2__urban-sidewalk-with-siren_02.mp3" type="audio/mpeg">
+</audio>
+    
+  </body>
+
+<!-- Mirrored from thaer.no/fullscreen/ladder by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jul 2024 04:27:35 GMT -->
+</html>

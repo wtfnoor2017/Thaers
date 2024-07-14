@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from thaer.no/fullscreen/carnal by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jul 2024 04:28:44 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js"></script>
+    <script src="../../code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>æther – carnal</title>
+    
+    <script>
+      // array of image URLs
+      var images = ["/fullscreen/svg_img/grain-01.png", "svg_img/grain-02.png", "svg_img/grain-03.png", "svg_img/grain-04.png", "svg_img/grain-05.png", "svg_img/grain-06.png", "svg_img/grain-07.png", "/fullscreen/svg_img/grain-08.png"];
+      
+      // starting index
+      var i = 0;
+      
+      // set interval to change background image
+      setInterval(function() {
+        // update index
+        i = (i + 1) % images.length;
+      
+        // update div's background image
+        $("#grain").css("background-image", "url(" + images[i] + ")");
+      }, 50);
+    </script>
+    
+    <style>
+    * {
+      margin:0;
+      padding:0;
+      }
+      
+    body {
+      background-color:black;
+      overflow:hidden;
+      }
+      
+    #animation {
+      position:absolute;
+      width:100vw;
+      height:100vh;
+      }
+    
+    #grain {
+      position:absolute;
+      pointer-events:none;
+      width:100vw;
+      height:100vh;
+      background-image:url("svg_img/grain-01.png");
+      z-index:9998;
+      }
+      
+    .buttonBox {
+      position:absolute;
+      z-index:9999;
+      left:50%;
+      transform:translate(-49%);
+      bottom:20px;
+      }
+      
+    .buttonBox a {
+      color:white;
+      text-decoration:none;
+      display:block;
+      float:left;
+      padding-right:10px;
+      padding-left:10px;
+      font-style:italic;
+      letter-spacing:3px;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+      transition:letter-spacing 0.2s ease-in-out;
+      line-height:40px;
+      font-size:10px;
+      }
+      
+    .buttonBox a:hover {
+      text-decoration:underline;
+      letter-spacing:5px;
+      }    
+    
+    .sigil {
+        position:fixed;
+        height:32px;
+        width:32px;
+        left:10px;
+        top:10px;
+        background-image:url("../favicon.svg");
+        background-repeat:no-repeat;
+        background-size: 24px;
+        background-position:center center;
+        transition: background-size 0.5s ease-in-out, transform 0.5s ease-in-out;
+        z-index:9999;
+        }
+      .sigil:hover {
+        background-size: 32px;
+        transform:rotate(180deg);
+        }
+    </style>
+    
+  </head>
+  <body>
+    <a class="sigil" href="../index.html"></a>
+    <div class="buttonBox">
+      <a href="train.html">← previous</a>
+      <a href="#">next →</a>
+    </div>
+    <div id="animation"></div>
+    <div id="grain"></div>
+    <script>
+      var animation = bodymovin.loadAnimation({
+        container: document.getElementById('animation'),
+        renderer: 'svg',
+        loop: true,  // Set loop property to true to make the animation loop indefinitely
+        autoplay: true,
+        path: '/json/carnal01.json'
+      });
+    </script>
+  </body>
+
+<!-- Mirrored from thaer.no/fullscreen/carnal by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jul 2024 04:28:44 GMT -->
+</html>

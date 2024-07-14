@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from thaer.no/fullscreen/train by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jul 2024 04:28:34 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>æther – train</title>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js"></script>
+    <script src="../../code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+<script>
+  // array of image URLs
+  var images = ["/fullscreen/svg_img/grain-01.png", "svg_img/grain-02.png", "svg_img/grain-03.png", "svg_img/grain-04.png", "svg_img/grain-05.png", "svg_img/grain-06.png", "svg_img/grain-07.png", "/fullscreen/svg_img/grain-08.png"];
+  
+  // starting index
+  var i = 0;
+  
+  // set interval to change background image
+  setInterval(function() {
+    // update index
+    i = (i + 1) % images.length;
+  
+    // update div's background image
+    $("#grain").css("background-image", "url(" + images[i] + ")");
+  }, 50);
+</script>
+    
+<style>
+    
+    * {
+      margin:0px;
+      padding:0px;
+      }
+      
+    body {
+      background-color:black !important;
+      overflow:hidden;
+      }
+      
+    #animation {
+      position:absolute;
+      width:100vw;
+      height:31.25vw;
+      top:50%;
+      transform:translateY(-50%);
+      }
+      
+    #maskBottom {
+      position:absolute;
+      width:100vw;
+      height:2vw;
+      top:50%;
+      transform:translateY(700%);
+      background-color:black;
+      }
+    
+    #maskTop {
+      position:absolute;
+      width:100vw;
+      height:2vw;
+      top:50%;
+      transform:translateY(-820%);
+      background-color:black;
+      }
+      
+    #trainBG {
+      background-color:white;
+      position:absolute;
+      width:99vw;
+      height:30vw;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+      }
+    
+    .bridge {
+      background-image:url("svg_img/bridge-01.svg");
+      background-size:220vw;
+      background-position: -200vw center;
+      background-repeat:no-repeat;
+      animation: bridge 30s linear infinite;
+      animation-delay: 3s;
+      }
+      
+    @keyframes bridge {
+      0% {background-position: -200vw center;}
+      7% {background-position: 100vw center;}
+      100% {background-position: 100vw center;}
+    }
+    
+    .skyline01 {
+      background-image:url("svg_img/skyline-01.svg");
+      background-size:100vw;
+      background-position: center center;
+      background-repeat:repeat-x;
+      animation: skyline 80s linear infinite;
+      }
+      
+    .skyline02 {
+      background-image:url("svg_img/skyline-02.svg");
+      background-size:100vw;
+      background-position: center center;
+      background-repeat:repeat-x;
+      animation: skyline 40s linear infinite;
+      }
+      
+    .house01 {
+      background-image:url("svg_img/house-02.svg");
+      background-size:100vw;
+      background-position: center center;
+      background-repeat:repeat-x;
+      animation: skyline 20s linear infinite;
+      }
+      
+    @keyframes skyline {
+      0% {background-position: -100vw center;}
+      100% {background-position: 100vw center;}
+    }
+    
+    .bg {
+      position:absolute;
+      top:50%;
+      transform:translateY(-50%);
+      height:31.25vw;
+      width:100vw;
+      }
+      
+    .electricalPole01 {
+      background-image:url("svg_img/electrical_pole_01.svg");
+      background-size:150vw;
+      background-position: center center;
+      background-repeat:no-repeat;
+      animation: electricalPole 10s linear infinite;
+      }
+    
+    .trainPole01 {
+      background-image:url("svg_img/train-pole-01.svg");
+      background-size:100vw;
+      background-position: center center;
+      background-repeat:repeat-x;
+      animation: skyline 2s linear infinite;
+      }
+      
+    .electricalPole02 {
+      background-image:url("svg_img/electricalPole02.svg");
+      background-size:100vw;
+      background-position: center center;
+      background-repeat:repeat-x;
+      animation: skyline 3s linear infinite;
+      }
+      
+    .electricalPole03 {
+      background-image:url("svg_img/electricalPole03.svg");
+      background-size:100vw;
+      background-position: center center;
+      background-repeat:repeat-x;
+      animation: skyline 6s linear infinite;
+      }
+      
+     @keyframes electricalPole {
+      0% {background-position: -200vw center;}
+      30% {background-position: 100vw center;}
+      100% {background-position: 100vw center;}
+    }
+    
+.buttonBox {
+  position:absolute;
+  z-index:9999;
+  left:50%;
+  transform:translate(-49%);
+  bottom:20px;
+  }
+  
+.buttonBox a {
+  color:white;
+  text-decoration:none;
+  display:block;
+  float:left;
+  padding-right:10px;
+  padding-left:10px;
+  font-style:italic;
+  letter-spacing:3px;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+  transition:letter-spacing 0.2s ease-in-out;
+  line-height:40px;
+  font-size:10px;
+  }
+  
+.buttonBox a:hover {
+  text-decoration:underline;
+  letter-spacing:5px;
+  }    
+    
+    .sigil {
+        position:fixed;
+        height:32px;
+        width:32px;
+        left:10px;
+        top:10px;
+        background-image:url("../favicon.svg");
+        background-repeat:no-repeat;
+        background-size: 24px;
+        background-position:center center;
+        transition: background-size 0.5s ease-in-out, transform 0.5s ease-in-out;
+        z-index:9999;
+        }
+      .sigil:hover {
+        background-size: 32px;
+        transform:rotate(180deg);
+        }
+        
+#grain {
+  position:absolute;
+  pointer-events:none;
+  width:100vw;
+  height:100vh;
+  background-image:url("svg_img/grain-01.png");
+  z-index:9998;
+  }
+      
+    </style>
+  </head>
+  <body>
+  
+    <a class="sigil" href="../index.html"></a>
+    <div class="buttonBox">
+      <a href="moon.html">← previous</a>
+      <a href="carnal.html">next →</a>
+    </div>
+    <div id="trainBG"></div>
+    <div class="skyline01 bg"></div>
+    <div class="skyline02 bg"></div>
+    <div class="house01 bg"></div>
+    <div class="electricalPole01 bg"></div>
+    <div class="trainPole01 bg"></div>
+    <div class="electricalPole02 bg"></div>
+    <div class="electricalPole03 bg"></div>
+    <div class="bridge bg"></div>
+    <div id="grain"></div>
+    
+    <!-- Create a container element for the animation -->
+    <div id="animation"></div>
+    <!-- Load the animation -->
+    <div id="maskBottom"></div>
+    <div id="maskTop"></div>
+
+    <script>
+      var animation = bodymovin.loadAnimation({
+        container: document.getElementById('animation'),
+        renderer: 'svg',
+        loop: true,  // Set loop property to true to make the animation loop indefinitely
+        autoplay: true,
+        path: '/json/train-01.json'
+      });
+    </script>
+    
+
+   
+  </body>
+
+<!-- Mirrored from thaer.no/fullscreen/train by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jul 2024 04:28:43 GMT -->
+</html>
