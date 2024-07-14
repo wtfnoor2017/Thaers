@@ -1,0 +1,148 @@
+* {
+  margin:0;
+  padding:0;
+  border:0;
+  }
+
+body {
+  background-color:#cfccbb;
+  }
+
+.diary-container {
+  background-image:url(images/paper-01.png);
+  background-color:#cfccbb;
+  width:320px;
+  /*min-height:460px;*/
+  padding:40px;
+  background-size:300px;
+  background-position:center;
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  box-shadow:0px 10px 20px rgba(141, 105, 58, 0.2), 0px 30px 25px rgba(141, 105, 58, 0.2), 0px 60px 50px rgba(141, 105, 58, 0.2);
+  border-radius:3px;
+  animation: fadeUp 3s ease-out forwards;
+  z-index:20;
+}
+
+#diary-headline {
+  font-size:20px;
+  text-align:center;
+  color:black;
+  font-weight:100;
+  letter-spacing:2px;
+  font-style:italic;
+  line-height:30px;
+  z-index:20;
+}
+
+#diary-entry {
+  font-size:14px;
+  text-align:center;
+  color:black;
+  line-height:20px;
+  z-index:20;
+}
+
+.btnContainer {
+  width:248px;
+  height:auto;
+  margin-left:auto;
+  margin-right:auto;
+  z-index:20;
+  }
+
+button {
+  padding: 8px 0px;
+  width:120px;
+  background-color:rgba(0, 0, 0, 0);
+  color: black;
+  border: 0.5px solid black;
+  cursor: pointer;
+  font-style:italic;
+  letter-spacing:3px;
+  font-size:8px;
+  margin-top:10px;
+  margin-right:2px;
+  margin-left:2px;
+  transition:letter-spacing 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  border-radius:100px;
+  z-index:20;
+  
+}
+
+button:hover {
+  letter-spacing:4px;
+  background-color:rgba(0, 0, 0, 1);
+  border-color:black;
+  color:#cfccbb;
+  z-index:20;
+  }
+
+hr {
+  height:1px;
+  border-width:0;
+  background-color:black;
+  width:64px;
+  margin-top:10px;
+  margin-bottom:10px;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:2px;
+  z-index:20;
+  }
+  
+hr.end {
+  width:20px;
+  z-index:20;
+  }
+
+#grain {
+  position:fixed;
+  pointer-events:none;
+  width:100%;
+  height:100%;
+  background-image:url("fullscreen/svg_img/grain-01.png");
+  z-index:10;
+  }
+  
+.vignette {
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(141, 105, 58, 0) 30%, rgba(141, 105, 58, 0.5) 100%);
+  position:fixed;
+  width:100%;
+  height:100%;
+  pointer-events:none;
+  z-index:10;
+  }
+  
+  
+@keyframes fadeUp {
+  from {
+    opacity:0;
+    margin-top:100px;
+    }
+  to {
+    opacity:1;
+    margin-top:0px;
+    }
+}
+
+      .sigil {
+        position:fixed;
+        height:32px;
+        width:32px;
+        left:10px;
+        top:10px;
+        background-image:url("favicon.svg");
+        background-repeat:no-repeat;
+        background-size: 22px;
+        background-position:center center;
+        transition: background-size 0.5s ease-in-out, transform 0.5s ease-in-out;
+        z-index:9999;
+        }
+      .sigil:hover {
+        background-size: 28px;
+        transform:rotate(180deg);
+        }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from thaer.no/pixel by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jul 2024 04:19:16 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <title>pixel art gallery</title>
+  <style>
+  
+  body {
+    background-color:black;
+    image-rendering: pixelated;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  }
+  
+    .image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top:40px;
+  height: 80vh;
+  width:90vw;
+}
+
+    .image-container img {
+      height: 100%;
+    }
+    
+    .image-text {
+  text-align: center;
+  margin-top: 10px;
+  max-width:300px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-container button {
+  margin: 0 5px;
+}
+
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 28px;
+  cursor: pointer;
+  transition:all 0.2s ease-in-out;
+}
+
+.button:hover {
+  color:gray;
+}
+    
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <img id="galleryImage" src="#" alt="Image"><br>
+    <p id="imageText" class="image-text"></p>
+  </div>
+  
+  <div class="button-container">
+  <button class="button" id="backButton">🡐</button>
+  <button class="button" id="nextButton"> 🡒</button>
+</div>
+
+  <script src="gallery.js"></script>
+</body>
+
+<!-- Mirrored from thaer.no/pixel by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jul 2024 04:19:16 GMT -->
+</html>

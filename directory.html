@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from thaer.no/directory by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jul 2024 04:18:57 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thær – directory</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script src="../code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="grain.js"></script>
+    
+<script type="text/javascript"> 
+  jQuery(function($) {
+        $('.item').each(function() {
+            var c = Math.random() * 0.7;
+            $(this).css('animation-delay', '' + c + 's');
+        });
+    });
+</script>
+
+    
+    <style>
+    * {
+      margin:0px;
+      padding:0px;
+      border:0px;
+      }
+    
+    body {
+      background-color:black;
+      background-image:url(images/texture-bg-01.png);
+      animation: bgMoveY 60s infinite linear;
+      overflow-x: hidden;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      }
+    
+    body::-webkit-scrollbar {
+    display: none;
+    }
+      
+    @keyframes bgMoveY {
+      0% {
+        background-position-y:1024px;
+      }
+      100% {
+        background-position-y:-1024px;
+      }
+    }
+    
+    .item {
+      height:auto;
+      display:block;
+      width:33.3333333333%;
+      height:33.3333333333vw;
+      float:left;
+      position:relative;
+      background-repeat:no-repeat;
+      background-position:center center;
+      background-size:16vw;
+      transition:all 0.3s ease-in-out;
+      animation: fadein 1s ease-out;
+      animation-fill-mode: forwards;
+      opacity: 0;
+      box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.5);
+      }
+    
+    .item p {
+      text-decoration:none;
+      color:white;
+      font-size:16px;
+      position:absolute;
+      bottom:0px;
+      line-height:50px;
+      left:50%;
+      transform:translateX(-50%);
+      letter-spacing:5px;
+      font-style:italic;
+      transition:all 0.3s ease-in-out;
+      text-align:center;
+      white-space: nowrap;
+      z-index:40;
+      }
+      
+    .item:hover {
+      /*background-color:rgba(16, 9, 9, 0.1);
+      background-size:16.5vw;*/
+      box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.8);
+      background-position:center 40%;
+      }
+      
+    .item:hover p {
+      /*text-decoration:underline;*/
+      letter-spacing:7px;
+      }
+      
+    .item:visited {
+      color:white;
+      }
+      
+    .hoverBoxX {
+      position:absolute;
+      background-color:black;
+      width:0%;
+      height:3px;
+      transition:all 0.3s ease-in-out;
+      left:50%;
+      transform:translateX(-50%);
+      border-radius:1.5px;
+      }
+      
+    .item:hover .hoverBoxX {
+      width:100%;bor
+      }
+      
+    .hB {
+      bottom:0px;
+      height:50px;
+      }
+      
+    .hT {
+      top:0px;
+      }
+      
+    .hoverBoxY {
+      position:absolute;
+      background-color:black;
+      width:3px;
+      height:0%;
+      transition:all 0.3s ease-in-out;
+      top:50%;
+      transform:translateY(-50%);
+      border-radius:1.5px;
+      }
+      
+    .item:hover .hoverBoxY {
+      height:100%;
+      }
+      
+    .hL {
+      left:0px;
+      }
+      
+    .hR {
+      right:0px;
+      }
+    
+    .redHall {
+      background-image:url("images/icons/icons-red-hall-01.svg");
+      }
+      
+    .whiteHall {
+      background-image:url("images/icons/icons-white-hall-01.svg");
+      }
+      
+    .aetherLogs {
+      background-image:url("images/icons/icons-aether-logs-01.svg");
+      }
+      
+    .aethercast {
+      background-image:url("images/icons/icons-aethercast-01.svg");
+      }
+      
+    .fullscreen {
+      background-image:url("images/icons/icons-fullscreen-01.svg");
+      }
+      
+    .cinema {
+      background-image:url("images/icons/icons-cinema-01.svg");
+      }
+      
+    .audio {
+      background-image:url("images/icons/icons-audio-01.svg");
+      }
+      
+    .calendar {
+      background-image:url("images/icons/icons-calendar-01.svg");
+      }
+      
+    .cards {
+      background-image:url("images/icons/icons-cards-01.svg");
+      }
+      
+    .game {
+      background-image:url("images/icons/icons-game-01.svg");
+      }
+      
+    .misc {
+      background-image:url("images/item-01.svg");
+      }
+      
+    .pixelart {
+      background-image:url("images/pixelart-icon-01.svg");
+      }
+      
+    .note {
+      background-image:url("images/icons/icons-book-01.svg");
+      }
+      
+    .sigil {
+      position:fixed;
+      height:32px;
+      width:32px;
+      left:10px;
+      top:10px;
+      background-image:url("favicon.svg");
+      background-repeat:no-repeat;
+      background-size: 24px;
+      background-position:center center;
+      transition: background-size 0.5s ease-in-out, transform 0.5s ease-in-out;
+      z-index:9999;
+      }
+      
+    .sigil:hover {
+      background-size: 32px;
+      transform:rotate(180deg);
+      }
+      
+    #grain {
+      position:fixed;
+      pointer-events:none;
+      width:100%;
+      height:100%;
+      background-image:url("fullscreen/svg_img/grain-01.png");
+      }
+      
+        @keyframes fadein {
+    from {
+      opacity: 0;
+      filter: blur(15px);
+      transform:translateY(50px);
+    }
+    to   {
+      opacity: 1;
+      filter: blur(0px);
+      transform:translateY(0px);
+      }
+    }
+
+    
+    @media only screen and (max-width: 600px) {
+      .item {
+        width:100%;
+        height:100vw;
+        background-size:50vw;
+        }
+      .item:hover {
+        background-size:52vw;
+        }
+    }
+    
+    @media only screen and (min-width: 1200px) {
+      .item {
+        width:25%;
+        height:25vw;
+        background-size:12vw;
+        }
+      .item:hover {
+        background-size:12.5vw;
+        }
+    }
+    </style>
+  </head>
+  <body>
+    <a class="sigil" href="index.html"></a>
+    <div id="grain"></div>
+    
+    <div class="content">
+    
+      <a class="item aetherLogs" href="ether/introduction.html">
+        <p>æther logs</p>
+        <div class="hoverBoxX hT"></div>
+        <div class="hoverBoxX hB"></div>
+        <div class="hoverBoxY hL"></div>
+        <div class="hoverBoxY hR"></div>
+        
+      </a>
+      
+      <a class="item pixelart" href="pixel.html">
+        <p>digital sketches</p>
+        <div class="hoverBoxX hT"></div>
+        <div class="hoverBoxX hB"></div>
+        <div class="hoverBoxY hL"></div>
+        <div class="hoverBoxY hR"></div>
+        
+      </a>
+      
+      <a class="item aethercast" href="3d/caped.html">
+        <p>æthercast</p>
+        <div class="hoverBoxX hT"></div>
+        <div class="hoverBoxX hB"></div>
+        <div class="hoverBoxY hL"></div>
+        <div class="hoverBoxY hR"></div>
+      </a>
+      
+      <a class="item fullscreen" href="crosses.html">
+        <p>fullscreen</p>
+        <div class="hoverBoxX hT"></div>
+        <div class="hoverBoxX hB"></div>
+        <div class="hoverBoxY hL"></div>
+        <div class="hoverBoxY hR"></div>
+      </a>
+      
+      <a class="item note" href="diary.html">
+        <p>notes</p>
+        <div class="hoverBoxX hT"></div>
+        <div class="hoverBoxX hB"></div>
+        <div class="hoverBoxY hL"></div>
+        <div class="hoverBoxY hR"></div>
+      </a>
+      
+      
+      
+      <a class="item redHall" href="redhall.html">
+        <p>red hall</p>
+        <div class="hoverBoxX hT"></div>
+        <div class="hoverBoxX hB"></div>
+        <div class="hoverBoxY hL"></div>
+        <div class="hoverBoxY hR"></div>
+      </a>
+      
+      <a class="item whiteHall" href="whitehall.html">
+        <p>white hall</p>
+        <div class="hoverBoxX hT"></div>
+        <div class="hoverBoxX hB"></div>
+        <div class="hoverBoxY hL"></div>
+        <div class="hoverBoxY hR"></div>
+      </a>
+      
+      <a class="item calendar" href="calendar.html">
+        <p>calendar</p>
+        <div class="hoverBoxX hT"></div>
+        <div class="hoverBoxX hB"></div>
+        <div class="hoverBoxY hL"></div>
+        <div class="hoverBoxY hR"></div>
+      </a>
+      
+      <a class="item cards" href="cards.html">
+        <p>cards</p>
+        <div class="hoverBoxX hT"></div>
+        <div class="hoverBoxX hB"></div>
+        <div class="hoverBoxY hL"></div>
+        <div class="hoverBoxY hR"></div>
+      </a>
+      
+      <a class="item cinema" href="video/cinema.html">
+        <p>cinema</p>
+        <div class="hoverBoxX hT"></div>
+        <div class="hoverBoxX hB"></div>
+        <div class="hoverBoxY hL"></div>
+        <div class="hoverBoxY hR"></div>
+      </a>
+      
+      <a class="item audio" href="sound/audiolibrary.html">
+        <p>audio</p>
+        <div class="hoverBoxX hT"></div>
+        <div class="hoverBoxX hB"></div>
+        <div class="hoverBoxY hL"></div>
+        <div class="hoverBoxY hR"></div>
+      </a>
+      
+      <a class="item game" href="https://thaelm.no/" target="_blank">
+        <p>thælm game dev</p>
+        <div class="hoverBoxX hT"></div>
+        <div class="hoverBoxX hB"></div>
+        <div class="hoverBoxY hL"></div>
+        <div class="hoverBoxY hR"></div>
+      </a>
+
+    </div>
+  </body>
+
+<!-- Mirrored from thaer.no/directory by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jul 2024 04:19:08 GMT -->
+</html>

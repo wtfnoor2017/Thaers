@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from thaer.no/pillar by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jul 2024 04:26:28 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <title>Pillar</title>
+    <style>
+
+body {
+  margin:0px;
+  padding:0px;
+  overflow:hidden;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 50%, rgba(140,140,140,1) 100%);
+  width:100vw;
+  height:100vh;
+  }
+  
+.pillar {
+  position:absolute;
+  height:100vh;
+  width:100vw;
+  background-repeat:no-repeat;
+  background-position: center bottom;
+  background-size:70vw 70vh;
+  background-image:url("images/pillar.svg");
+  }
+  
+.clouds {
+  position:absolute;
+  height:100vh;
+  width:100vw;
+  }
+  
+.C2 {
+  background-image:url("images/C2.png");
+  animation: cloudX 240s linear infinite;
+  }
+  
+.C3 {
+  background-image:url("images/C3.png");
+  animation: cloudX 120s linear infinite;
+  }
+  
+.C4 {
+  background-image:url("images/C4.png");
+  animation: cloudX 80s linear infinite;
+  }
+  
+.C1 {
+  background-image:url("images/C1.png");
+  animation: cloudX 60s linear infinite;
+  }
+  
+.C5 {
+  background-image:url("images/C5_front.png");
+  animation: cloudX 40s linear infinite;
+  background-repeat:repeat-X;
+  background-position-y:bottom;
+  }
+  
+.C6 {
+  background-image:url("images/C6_front_03.png");
+  animation: cloudX 20s linear infinite;
+  background-repeat:repeat-X;
+  background-position-y:bottom;
+  opacity:0.7;
+  }
+  
+.C7 {
+  background-image:url("images/C7_front_03.png");
+  animation: cloudX 10s linear infinite;
+  background-repeat:repeat-X;
+  background-position-y:bottom;
+  opacity:0.8;
+  }
+  
+.vignette {
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 100%);
+  }
+  
+@keyframes cloudX {
+  from {background-position-x:1920px;}
+  to {ackground-position-x:-1920px;}
+}
+
+.sigil {
+        position:fixed;
+        height:32px;
+        width:32px;
+        left:10px;
+        top:10px;
+        background-image:url("favicon.svg");
+        background-repeat:no-repeat;
+        background-size: 24px;
+        background-position:center center;
+        transition: background-size 0.5s ease-in-out, transform 0.5s ease-in-out;
+        z-index:99;
+        }
+      .sigil:hover {
+        background-size: 32px;
+        transform:rotate(180deg);
+        }
+        
+.buttonBox {
+  position:absolute;
+  z-index:98;
+  left:50%;
+  transform:translate(-49%);
+  bottom:20px;
+  }
+  
+.buttonBox a {
+  color:white;
+  text-decoration:none;
+  display:block;
+  float:left;
+  padding-right:10px;
+  padding-left:10px;
+  font-style:italic;
+  letter-spacing:3px;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+  transition:letter-spacing 0.2s ease-in-out;
+  line-height:40px;
+  font-size:10px;
+  }
+  
+.buttonBox a:hover {
+  text-decoration:underline;
+  letter-spacing:5px;
+  }
+
+    </style>
+  </head>
+  <body>
+    <a class="sigil" href="https://ae-ther.neocities.org/"></a>
+    <div class="clouds C2"></div>
+    <div class="clouds C3"></div>
+    <div class="clouds C4"></div>
+    <div class="clouds C1"></div>
+    <div class="pillar"></div>
+    <div class="clouds C5"></div>
+    <div class="clouds C6"></div>
+    <div class="clouds C7"></div>
+    <div class="clouds vignette"></div>
+    
+    <div class="buttonBox">
+      <a href="crosses.html">← previous</a>
+      <a href="fullscreen/ladder.html">next →</a>
+    </div>
+    
+  </body>
+
+<!-- Mirrored from thaer.no/pillar by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jul 2024 04:26:55 GMT -->
+</html>

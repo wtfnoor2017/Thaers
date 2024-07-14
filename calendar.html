@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from thaer.no/calendar by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jul 2024 04:20:14 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script src="../code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>æther calendar</title>
+    
+<script>
+  function rotateDiv() {
+  var currentDate = new Date();
+  var startDate = new Date(currentDate.getFullYear(), 0, 0);
+  var diff = currentDate - startDate;
+  var oneSecond = 1000;
+  var secondsPassed = Math.floor(diff / oneSecond);
+  var angle = -(360/31536000) * secondsPassed; // negative angle
+  var rotateMe = document.getElementById("rotateMe");
+  rotateMe.style.transform = "translate(-50%, -50%) rotate(" + angle + "deg)";
+  rotateMe.style.transformOrigin = "center";
+}
+setInterval(rotateDiv, 1000);
+</script>
+
+<script>
+  // array of image URLs
+  var images = ["/fullscreen/svg_img/grain-01.png", "fullscreen/svg_img/grain-02.png", "fullscreen/svg_img/grain-03.png", "fullscreen/svg_img/grain-04.png", "fullscreen/svg_img/grain-05.png", "fullscreen/svg_img/grain-06.png", "fullscreen/svg_img/grain-07.png", "/fullscreen/svg_img/grain-08.png"];
+  
+  // starting index
+  var i = 0;
+  
+  // set interval to change background image
+  setInterval(function() {
+    // update index
+    i = (i + 1) % images.length;
+  
+    // update div's background image
+    $("#grain").css("background-image", "url(" + images[i] + ")");
+  }, 50);
+</script>
+    
+<style>
+
+* {
+  margin:0px;
+  padding:0px;
+  }
+
+body {
+  background-color:#030209;
+  background-image:url("images/bgCalendar03.png");
+  animation: fog 60s linear infinite;
+  overflow:hidden;
+  }
+  
+#container {
+  overflow:hidden;
+  height:100vh;
+  width:100vw;
+  position:absolute;
+  }
+  
+#stars {
+  height:200vw;
+  width:200vw;
+  background-image:url("images/stars02.png");
+  background-size:300px;
+  position:absolute;
+  background-position:center center;
+  left: 50%;
+  top: 50%;
+  animation: rotateS 120s linear infinite;
+  overflow:hidden;
+  }
+  
+#moon {
+  position: absolute;
+  height:90vh;
+  width:90vw;
+  background-image:url("images/moon-02.svg");
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:contain;
+  left: 50%;
+  top: 50%;
+  animation: moonFade 3s ease-in-out forwards;
+  animation-delay: 4s;
+  z-index:500;
+  transform: translate(-50%, -50%);
+  }
+  
+.vignette {
+  background: radial-gradient(circle, rgba(5,4,11,0) 50%, rgba(5,4,11,0.7) 90%);
+  position:absolute;
+  width:100vw;
+  height:100vh;
+  z-index:999;
+  pointer-events:none;
+  }
+  
+@keyframes moonFade {
+  from {
+    opacity:1;
+    }
+    
+  to {
+    opacity:0;
+    }
+}
+  
+@keyframes rotateS {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+    }
+    
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+  
+@keyframes fog {
+  from {background-position-y:1024px;}
+  to {background-position-y:-1024px;}
+}
+
+@keyframes fadeUpMark {
+  from {
+    opacity:0;
+    transform: translate(-50%, -50%) rotate(-1440deg);
+    }
+    
+  to {
+    opacity:1;
+    transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+@keyframes fadeUpMarkB {
+  from {
+    opacity:0;
+    transform: translate(-50%, -50%) rotate(1440deg);
+    }
+    
+  to {
+    opacity:1;
+    transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity:0;
+
+    }
+    
+  to {
+    opacity:1;
+
+    }
+}
+
+
+#rotateMe {
+  position: absolute;
+  height:90vh;
+  width:90vw;
+  background-image:url("images/calendar-01.svg");
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:contain;
+  left: 50%;
+  top: 50%;
+  animation: fadeUp 2s cubic-bezier(.38,0,.03,1) forwards;
+  animation-delay: 1s;
+  opacity:0;
+  z-index:700;
+}
+
+#mark {
+  position: absolute;
+  height:90vh;
+  width:90vw;
+  background-image:url("images/calendar-dial-02.svg");
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:contain;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeUpMarkB 7s cubic-bezier(.09,.64,.4,1) forwards;
+  opacity:0;
+  pointer-events:none;
+}
+
+#markB {
+  position: absolute;
+  height:90vh;
+  width:90vw;
+  background-image:url("images/calendar-dial-03.svg");
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:contain;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeUpMark 8s cubic-bezier(.09,.64,.4,1) forwards;
+  opacity:0; 
+  pointer-events:none;
+}
+
+#markC {
+  position: absolute;
+  height:90vh;
+  width:90vw;
+  background-image:url("images/calendar-dial-04.svg");
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:contain;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeUp 3s cubic-bezier(.09,.64,.4,1) forwards;
+  animation-delay: 4s;
+  opacity:0; 
+  pointer-events:none;
+}
+
+#markD {
+  position: absolute;
+  height:90vh;
+  width:90vw;
+  background-image:url("images/calendar-dial-03.svg");
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:contain;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeUpMarkB 8s cubic-bezier(.09,.64,.4,1) forwards;
+  opacity:0; 
+  pointer-events:none;
+}
+
+#markE {
+  position: absolute;
+  height:90vh;
+  width:90vw;
+  background-image:url("images/calendar-dial-02.svg");
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:contain;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeUpMark 7s cubic-bezier(.09,.64,.4,1) forwards;
+  opacity:0; 
+  pointer-events:none;
+}
+
+#grain {
+  position:fixed;
+  pointer-events:none;
+  width:100%;
+  height:100%;
+  background-image:url("fullscreen/svg_img/grain-01.png");
+  z-index:998;
+  }
+
+.sigil {
+        position:fixed;
+        height:32px;
+        width:32px;
+        left:10px;
+        top:10px;
+        background-image:url("favicon.svg");
+        background-repeat:no-repeat;
+        background-size: 24px;
+        background-position:center center;
+        transition: background-size 0.5s ease-in-out, transform 0.5s ease-in-out;
+        z-index:9999;
+        }
+      .sigil:hover {
+        background-size: 32px;
+        transform:rotate(180deg);
+        }
+</style>
+    
+  </head>
+  <body>
+    
+    <div id="container">
+      <div id="stars"></div>
+      <div id="moon"></div>
+      <div id="rotateMe"></div>
+      <div id="mark"></div>
+      <div id="markB"></div>
+      <div id="markC"></div>
+      <div id="markD"></div>
+      <div id="markE"></div>
+    </div>
+    
+    <div id="grain"></div>
+    <a class="sigil" href="index.html"></a>
+    <div class="vignette"></div>
+  </body>
+
+<!-- Mirrored from thaer.no/calendar by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jul 2024 04:20:25 GMT -->
+</html>

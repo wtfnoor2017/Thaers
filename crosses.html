@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from thaer.no/crosses by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jul 2024 04:19:17 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afroð</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    
+<style>
+
+* {
+  margin:0px;
+  padding:0px;
+  }
+
+.layer {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  background-repeat:repeat-x;
+  background-position-y: bottom;
+  pointer-events:none;
+  }
+  
+@keyframes rolling {
+  from {background-position-x: -3840px;}
+  to {background-position-x: 3840px;}
+}
+
+@keyframes bgMoveX {
+  0% {
+    background-position-x:-1024px;
+  }
+  100% {
+    background-position-x:1024px;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    color:rgba(255, 255, 255, 0);
+    letter-spacing:9vw;
+  }
+  100% {
+    color:rgba(255, 255, 255, 1);
+    letter-spacing:5vw;
+  }
+}
+  
+.L1 {
+  background-image:url(images/rolling/L1.svg);
+  animation: rolling 800s infinite linear;
+  }
+  
+.L2 {
+  background-image:url(images/rolling/L2.svg);
+  animation: rolling 600s infinite linear;
+  }
+
+.L3 {
+  background-image:url(images/rolling/L3.svg);
+  animation: rolling 400s infinite linear;
+  }
+
+.L4 {
+  background-image:url(images/rolling/L4.svg);
+  animation: rolling 200s infinite linear;
+  }
+  
+.L5 {
+  background-image:url(images/rolling/L5.svg);
+  animation: rolling 100s infinite linear;
+  }
+  
+.L6 {
+  background-image:url(images/rolling/L6.svg);
+  animation: rolling 50s infinite linear;
+  filter: blur(2px);
+  }
+  
+.L7 {
+  background-image:url(images/rolling/L7.svg);
+  animation: rolling 14s infinite linear;
+  filter: blur(10px);
+  }
+  
+.cloud1 {
+  background-image:url(images/rolling/clouds_02.png);
+  animation: rolling 150s infinite linear;
+  background-position-y:-150px;
+  }
+  
+.cloud2 {
+  background-image:url(images/rolling/clouds_02.png);
+  animation: rolling 30s infinite linear;
+  background-position-y:50px;
+  }
+  
+.bg1 {
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 2%, rgba(255,255,255,1) 70%);
+  }
+  
+.bg2 {
+  background-image:url(images/texture-bg-01.png);
+  background-repeat:repeat!important;
+  animation: bgMoveX 1600s infinite linear;
+  }
+  
+.bg3 {
+  background-image:url(images/texture-bg-02.png);
+  background-repeat:repeat!important;
+  animation: bgMoveX 200s infinite linear;
+  }
+.bg4 {
+  background-image:url(images/texture-bg-03.png);
+  background-repeat:repeat!important;
+  animation: bgMoveX 100s infinite linear;
+  }
+  
+.vignette {
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 100%);
+  }
+
+
+.text {
+  color:white;
+  font-size:10vw;
+  display:block;
+  text-align:center;
+  line-height:100vh;
+  letter-spacing:5vw;
+  font-style:italic;
+  animation: fadeUp 5s ease-out;
+  }
+
+.sigil {
+        position:fixed;
+        height:32px;
+        width:32px;
+        left:10px;
+        top:10px;
+        background-image:url("favicon.svg");
+        background-repeat:no-repeat;
+        background-size: 24px;
+        background-position:center center;
+        transition: background-size 0.5s ease-in-out, transform 0.5s ease-in-out;
+        z-index:99;
+        }
+      .sigil:hover {
+        background-size: 32px;
+        transform:rotate(180deg);
+        }
+
+.buttonBox {
+  position:absolute;
+  z-index:98;
+  left:50%;
+  transform:translate(-49%);
+  bottom:20px;
+  }
+  
+.buttonBox a {
+  color:white;
+  text-decoration:none;
+  display:block;
+  float:left;
+  padding-right:10px;
+  padding-left:10px;
+  font-style:italic;
+  letter-spacing:3px;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+  transition:letter-spacing 0.2s ease-in-out;
+  line-height:40px;
+  font-size:10px;
+  }
+  
+.buttonBox a:hover {
+  text-decoration:underline;
+  letter-spacing:5px;
+  }
+
+</style>
+    
+  </head>
+  <body>
+    <a class="sigil" href="https://ae-ther.neocities.org/"></a>
+    <div class="layer bg1"></div>
+    <div class="layer bg2"></div>
+    <div class="layer bg3"></div>
+    <div class="layer bg4"></div>
+    <div class="layer text">Afroð</div>
+    <div class="layer L1"></div>
+    <div class="layer L2"></div>
+    <div class="layer L3"></div>
+    <div class="layer L4"></div>
+    <div class="layer cloud1"></div>
+    <div class="layer L5"></div>
+    <div class="layer L6"></div>
+    <div class="layer cloud2"></div>
+    <div class="layer L7"></div>
+    <div class="layer vignette"></div>
+    
+    <div class="buttonBox">
+      <a href="directory.html">← previous</a>
+      <a href="pillar.html">next →</a>
+    </div>
+    
+  </body>
+
+<!-- Mirrored from thaer.no/crosses by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jul 2024 04:19:20 GMT -->
+</html>
