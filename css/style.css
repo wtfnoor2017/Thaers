@@ -1,0 +1,92 @@
+:root {
+  --font_family: 'Inter', sans-serif;
+  --font_size: 16px;
+  --background_color: #000;
+  --background_image: url("../img/wallpaper.jpg");
+  --image_border_color: #000;
+  --image_border_px: 3px;
+  --image_width: 140px;
+  --image_height: 140px;
+  --title_color: #fff;
+  --description_color: #f1c40f;
+  --svg_color: #fff;
+  --menu_background_color: #0e0e0e;
+  --menu_text_color: #fff;
+  --menu_active_text_color: #f1c40f;
+  --button_background_color: #0e0e0e;
+  --button_text_color: #fff;
+  --button_text_hover_color: #f1c40f;
+  --textarea_background_color: #0e0e0e;
+  --textarea_text_color: #fff;
+  --textarea_link_text_color: #f1c40f;
+  --footer_background_color: #0e0e0e;
+  --footer_text_color: #fff;
+  --footer_link_text_color: #f1c40f;
+}
+
+body {
+  font: var(--font_size) var(--font_family);
+  font-weight: 400;
+  line-height: 1.5;
+  background: var(--background_color) var(--background_image) no-repeat center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+}
+
+.header_img img {
+  height: var(--image_height);
+  width: var(--image_width);
+  border: var(--image_border_px) solid var(--image_border_color);
+  border-radius: 50%;
+  margin-bottom: 0.5em;
+}
+
+.header_text {
+  text-align: center; /* Center text */
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent blackish background */
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.header_text h1, .header_text h2 {
+  color: var(--title_color);
+  margin: 0;
+}
+
+.header_text h2 {
+  color: var(--description_color);
+}
+
+.header_svg_list {
+  display: flex;
+  justify-content: center; /* Center social media icons horizontally */
+  padding-top: 1em;
+}
+
+.header_svg_item {
+  width: 2.1em;
+  height: 2.1em;
+  cursor: pointer;
+}
+
+.header_svg_item:hover {
+  transform: scale(1.10);
+  transition: 0.10s ease;
+}
+
+.header_svg_item + .header_svg_item {
+  margin-left: 1em;
+}
+
+.header_svg_item svg {
+  fill: var(--svg_color);
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+  .header_text {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
